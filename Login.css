@@ -1,0 +1,120 @@
+@import url('https://fonts.googleapis.com/css2?family=Modak&display=swap');
+
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Modak', cursive
+    
+    
+}
+
+body{
+    background-color: #F9D390;
+}
+
+main{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+}
+
+.left-box{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 200px;
+
+}
+
+
+.right-box{
+    display: flex;
+    margin-top: 200px;
+    align-items: center;
+
+
+    .right-box-info {
+        
+        & h4 {
+            font-size: 48px;
+            font-weight: 300;
+            margin-bottom: 20px;
+            margin-top: -30px;
+        }
+
+        & form{
+            border: 1px solid black;
+            border-radius: 10px;
+            padding: 60px;
+            background-color: white;
+        } 
+
+        & .form-control{ 
+    
+            & input{
+                width: 100%;
+                padding: .5rem;
+                font-size: 26px;
+                border: 1px solid black;
+                border-radius: 10px;
+                margin-bottom: 20px;
+            }
+
+        }
+
+        & .form-text{
+            .span-register{
+                text-decoration: none;
+                color: #2925DD;
+                position: relative;
+            }
+        }
+
+        & .forget-pasword{
+            text-decoration: none;
+            font-size: 16px;
+        }
+
+        & button{
+            margin-bottom: 20px;
+            color: white;
+            background-color: #3D3CE7;
+            font-size: 26px;
+            height: 50px;
+            border: none;
+            border-radius: 10px;
+            width: 100%;
+        }
+
+        & span{
+            position: absolute;
+            font-size: 16px;
+            margin-top: 20px;
+        }
+        
+    }
+
+}
+
+.left-box{
+
+    .left-box-info{
+
+        & h3{
+            font-size: 48px;
+            font-weight: 500;
+            text-align: center;
+            margin-bottom: 20px;
+            margin-top: -90px;
+            color: #E67877;
+            text-shadow: -1px 0 black, 0 1px black, 1px 0 black, 0 -1px black;
+        }
+
+        & p{
+            text-align: center;
+            font-weight: 900;
+            font-size: 18px;
+        }
+    }
+}
