@@ -82,6 +82,8 @@ h1,h3,h4,p{
     font-family: 'Modak', cursive
     
 }
+
+
 .font {
     color: #000000;
     padding: 15px;
@@ -233,45 +235,11 @@ h1,h3,h4,p{
   }
 
   /*left bar*/
-.button2 {
-    color: black;
-    font: bold;
-    border: 3px solid #000000;
-    background-color: #6DC298;
-    padding: 15px;
-    text-align: center;
-    text-decoration: none;
-    margin-bottom: 10px;
-    display: block;
-    width: 50%;
-    margin-left: 60px;
-    border-radius: 30px;
-}
-.button3 {
-    color: black;
-    border: 3px solid #000000;
-    background-color: #E67877;
-    padding: 15px;
-    text-align: center;
-    text-decoration: none;
-    margin-bottom: 10px;
-    display: block;
-    width: 50%;
-    margin-left: 60px;
-    border-radius: 30px;
-}
-.button4 {
-    color: black;
-    border: 3px solid #000000;
-    background-color: #7877E6;
-    padding: 15px;
-    text-align: center;
-    text-decoration: none;
-    margin-bottom: 10px;
-    display: block;
-    width: 50%;
-    margin-left: 60px;
-    border-radius: 30px;
+  .what-page{
+    padding: 0;
+    position: relative;
+    left: -10%;
+    top: -10%;
 }
 
 .img-left{
