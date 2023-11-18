@@ -110,9 +110,12 @@ body{
     
      /* left bar */
     & .page-leftbar{
-        
+        position: relative;
+        left: 20%;
 
         & h3{
+            position: relative;
+            left: -20%;
             font-size: 36px;
             margin: 20px;
         }
@@ -122,31 +125,62 @@ body{
             margin: 20px;
         }
 
+        & .box{
+            margin-top: 0px;
+            width: 70%;
+            font-size: 26px;
+            border: 1px solid black;
+            border-radius: 10px;
+        }
+
+        & input{
+            position: relative;
+            left: 5%;
+        }
+
+        & label{
+            position: relative;
+            left: 5%;
+        }
+
+        .button-post{
+            position: relative;
+            top: 10%;
+            left: 5%;
+            background-color: #1DDC19;
+            color: white;
+            font-size: 20px;
+            width: 70%;
+            height: 50px;
+            border-radius: 10px;
+        }
         
 
         
     }
 
     & .page-main{
-
         & h5{
-            margin-top: 50px;
             display: inline-block;
-            margin-right: 20px;
+            margin-bottom: 10px;
             font-size: 18px;
             
         }
 
-        & .box-input{
+        & .box-text{
+            margin-top: 10px;
+            margin-bottom: 10px;
             width: 20%;
-            padding: .5rem;
+            height: 30%;
             font-size: 16px;
             border: 1px solid black;
-            border-radius: 50px;
-            margin-bottom: 10px;
+            border-radius: 10px;
+        }
+
+        & .posit{
             position: relative;
-            left: 4%;
-            top: 5%;    
+            top: 20%;
+            left: 10%;
         }
 
         

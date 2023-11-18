@@ -125,10 +125,11 @@ body{
         }
 
         & .box{
-            border-radius: 50px;
+            margin-top: 10px;
             width: 30%;
-            padding: .5rem;
-            height: 50px;
+            font-size: 26px;
+            border: 1px solid black;
+            border-radius: 10px;
         }
 
        & .btn_submit{
