@@ -2,8 +2,8 @@
 
 .grid {
     display: grid;
-    grid-template-columns: 400px auto;
-    grid-template-rows: 100px minmax(250px, auto) 100px;
+    grid-template-columns: 800px auto;
+    grid-template-rows: 100px minmax(400px, auto) 100px;
     grid-template-areas: 
         'header header'
         'leftber main'
@@ -16,15 +16,28 @@ html, body {
     padding: 0;
 }
 
+* a{
+    text-decoration: none;
+    color: #000000;
+}
+h1,h3,h4,p{
+    padding: 0;
+    margin: 0;
+}
+
 .header {
     grid-area: header;
 }
 .leftber { 
     grid-area: leftber;
+    position: relative;
+    left: 15%;
+    top: 15%;
 }
 .main {
     grid-area: main;
-    max-width: 1200px;
+    
+
 }
 .footer {
     grid-area: footer;
@@ -59,11 +72,6 @@ html, body {
     left: 80%;
 }
 
-a:hover {
-    color: white;
-}
-
-
 .brand {
     display: inline-block;
     font-size: 48px;
@@ -72,10 +80,7 @@ a:hover {
     text-shadow: -1px 0 black, 0 1px black, 1px 0 black, 0 -1px black;
     text-decoration: none;
     font-family: 'Modak', cursive
-}
-
-a.brand:hover{
-    color: #E67877;
+    
 }
 .font {
     color: #000000;
@@ -150,6 +155,16 @@ a.brand:hover{
     transform: translateX(-80%);
 }
 
+.right-photo-user{
+    width: 60px;
+    border-radius: 50%;
+    padding: 20px;
+    position: absolute;
+    top: 1%;
+    left: 80%;
+    transform: translateX(-40%);
+}
+
 .post-button{
     background-color: #3D3CE7;
     color: white;
@@ -159,11 +174,65 @@ a.brand:hover{
     border-radius: 10px;
     position: absolute;
     top: 2%;
-    left: 95%;
+    left: 96%;
     transform: translateX(-80%);
 }
 
-/*left bar*/
+/* Header dropdown */
+.navbar {
+    background-color: #F9D390;
+    border-radius: 7px;
+    box-shadow: 0 1px 3px rgba(255, 255, 255, 0.9), 0 1px 2px rgba(0, 0, 0, 0.24);
+    position: absolute;
+    top: -1%;
+    left: 90%;
+    transform: translateX(-90%);
+    width: 200px;
+  }
+    ul {
+    display: flex;
+  }
+  li {
+    display: flex;
+    align-items: center;
+    border-radius: 4px;
+    position: relative;
+  }
+  li a {
+    padding: 20px 30px;
+    color: #000000;
+  }
+  li a i {
+    margin-left: 5px;
+    font-size: 12px;
+    transition: 0.4s;
+  }
+  li:hover {
+    background-color: #f9f9f9;
+  }
+  .dropdown {
+    position: absolute;
+    display: block;
+    background-color: #fff;
+    top: 120%;
+    opacity: 0;
+    visibility: hidden;
+    border-radius: 4px;
+    box-shadow: 0 1px 3px rgba(255, 255, 255, 0.9), 0 1px 2px rgba(0, 0, 0, 0.24);
+    transition: 0.3s;
+    left: 0;
+    width: 200px;
+  }
+  .dropdown-link:hover .dropdown {
+    top: 105%;
+    opacity: 1;
+    visibility: visible;
+  }
+  .dropdown-link:hover a i {
+    transform: rotate(-180deg);
+  }
+
+  /*left bar*/
 .button2 {
     color: black;
     font: bold;
@@ -205,85 +274,25 @@ a.brand:hover{
     border-radius: 30px;
 }
 
-
-/*main bar*/
-
-.products-con{
-    display: grid;
-    grid-template-columns: repeat(3, 1fr);
-    grid-gap: 1rem;
-    margin-top: 5%;
+.img-left{
+    max-width: 600px;
+    width: 600px;
 }
 
-.products-item{
-    position: relative;
-    border: 1px solid #000000;
-    border-radius: 10px;
-    background-color: #F9D390;
-}
-
-.products-item:hover{
-    transition: 0.3s;
-    border: 5px solid #3D3CE7;
-}
-
-.fa-heart{
-    position: absolute;
-    top: 5%;
-    right: 5%;
-}
-
-.fa-heart:hover{
-    color: red;
-}
-
-.products-img img{
-    width: 100%;
-    height: 100%;
-    max-width: 400px;
-    max-height: 250px;
-    border-radius: 10px;
-}
-
-.products-breed{
-    padding: 0.5rem;
-    font-weight: bold;
-}
-
-.products-address{
-    padding: 0.5rem;
-    color: #8A8A8A;
-}
-
-.products-price{
-    padding: 0.5rem;
-    font-weight: bold;
-}
-
-.space-main{
-    margin: 0.5rem;
-}
-
-.products-button{
-    display: flex;
-    justify-content: space-around;
-
-}
+/*Right bar*/
 
 .chat-seller{
     color: #000000;
     background-color: white;
     border-radius: 10px;
-    height: 50px;
-    padding-left: 30px;
-    padding-right: 30px;
-    font-size: 16px;
+    width: 25%;
+    height: 10%;
     
 }
 
 .chat-baricon1{
-    width: 100%;
-    max-width: 20px; 
+    width: 25%;
+    max-width: 18px; 
     padding-right:10px ;
     margin-top: -10px;
     margin-bottom: -5px;
@@ -293,21 +302,43 @@ a.brand:hover{
 .call{
     margin-left: 10px;
     margin-top: 20px;
+    
     color: #000000;
     background-color: white;
     border-radius: 10px;
-    height: 50px;
-    margin-top: 9px;
-    padding-right: 30px;
-    padding-left: 30px;
-    font-size: 16px;
+    width: 25%;
+    height: 10%;
+}
+
+.inline-text{
+    display: inline-block;
+}
+
+/*footer ber*/
+.footer-waning{
+    position: absolute;
+    top: 95%;
+    left: 40%;
+}
+
+.space-main{
+    margin-bottom: 10px;
+}
+
+.font-style{
+    color: #2925DD;
+}
+
+.organize-space{
+    margin-top: 8%;
+}
+
+.fa-check{
+    color: #14FF0F;
 }
 
 .fa-phone{
-    width: 25%;
-    max-width: 36px; 
     color: white;
     text-shadow: -1px 0 #000, 0 1px #000, 1px 0 #000, 0 -1px #000;
     padding-right: 10px;
-    
 }

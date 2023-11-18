@@ -38,8 +38,6 @@ body{
             max-width: 700px;
             margin: auto;
             margin-top: -20px;
-            
-            
         }
         
         & .brand{
@@ -137,7 +135,7 @@ body{
     transform: translateX(-90%);
     width: 150px;
   }
-  ul {
+    ul {
     display: flex;
   }
   li {
