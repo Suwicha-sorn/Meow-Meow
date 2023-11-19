@@ -108,14 +108,14 @@ a.brand:hover{
     position: absolute;
     left: 30%;
     top: 3%;
-    width: 100%;
+    width: 60vh;
 }
 
 #search-input {
     padding: 10px;
     border: 1px solid #ccc;
     border-radius: 0px;
-    width: 25%;
+    width: 50vh;
 }
 
 #search-button {
